@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_timestamp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18 Desember 2019"
+            android:textSize="15sp"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/nunito_bold"/>
+        <TextView
+            android:id="@+id/tv_jenis_zakat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zakat Maal"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_nominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal : 25 Gram"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_masjid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Penyalur Masjid Nurul Hijrah Makassar"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_alamat_masjid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Tamalate 2 Makassar"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_jatuh_tempo"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jatuh tempo : Januari 2019"
+            android:textSize="15sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#FFEB3B"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_above="@id/fm"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Go"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:fontFamily="@font/nunito_bold_italic"
+                        android:background="@drawable/background_circle"/>
+                    <TextView
+                        android:translationX="-10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:fontFamily="@font/nunito_bold_italic"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrasi"
+                    android:textSize="30sp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Username"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_username"
+                    android:padding="15dp"
+                    android:hint="Tulis username anda"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nama"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:padding="15dp"
+                    android:hint="Tulis nama anda"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_email"
+                    android:padding="15dp"
+                    android:hint="Tulis email anda"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Alamat"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:padding="15dp"
+                    android:hint="Tulis alamat anda"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Password"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:padding="15dp"
+                    android:hint="Tulis password anda"
+                    android:textSize="12sp"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="24dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Konfirmasi Password"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:padding="15dp"
+                    android:hint="Tulis password anda"
+                    android:textSize="12sp"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/nunito"
+                    android:text="Sudah punya akun ? Silahkan login"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/fm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_above="@id/fm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Go"
+                            android:gravity="center"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/white"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito_bold_italic"
+                            android:background="@drawable/background_circle"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zakat"
+                            android:textSize="30sp"
+                            android:translationX="-10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:padding="8dp"
+                            android:fontFamily="@font/nunito_bold_italic"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Muzakki"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="30sp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_marginTop="40dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_email"
+                    android:padding="15dp"
+                    android:hint="Tulis email anda"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_marginTop="24dp"
+                        android:includeFontPadding="false"
+                        android:layout_marginBottom="10dp"
+                        android:text="Password"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:padding="15dp"
+                        android:hint="Tulis password anda"
+                        android:textSize="12sp"
+                        android:maxLines="1"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:ems="10"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_password"/>
+                    <TextView
+                        android:id="@+id/tv_lupa_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/nunito"
+                        android:text="Lupa Password ?"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_below="@id/et_password"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp" />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_registrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginTop="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/nunito"
+                    android:text="Belum punya akun ? Silahkan registrasi"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

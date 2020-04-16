@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.zakat.KalkulatorProfesiFragmentDialog"
+    app:cardCornerRadius="8dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HITUNG ZAKAT ANDA"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:textColor="#444343"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="PENGHASILAN"
+            android:textColor="#444343"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_penghasilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:padding="0dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"/>
+        <TextView
+            android:textColor="#444343"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="Masukkan penghasilan per-bulan anda"
+            android:fontFamily="@font/nunito"
+            android:textSize="10sp"/>
+        <TextView
+            android:textColor="#444343"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PENGELUARAN"
+            android:fontFamily="@font/nunito"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/et_pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:padding="0dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:textColor="#444343"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Masukkan pengeluaran per-bulan anda"
+            android:fontFamily="@font/nunito"
+            android:textSize="10sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="#ECEBEB">
+            <TextView
+                android:id="@+id/tv_batal"
+                android:textColor="#444343"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_selesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
